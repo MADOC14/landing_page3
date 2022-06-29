@@ -1,0 +1,260 @@
+//COLOR
+// Primary
+$primaryDark: #363062;
+$primaryLigth: #4C3575;
+//Accent
+$accentDark: #B1BCE6;
+$accentLight: #A91079;
+//Neutral
+$NeutralBlue: #E9D5CA;
+$LightGray: #FFDAAF;
+// Typography
+$hero:'Raleway', sans-serif;
+$body:'Open Sans', sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+p, h3, h1 {
+    font-family: $body;
+    text-align: center;
+    color: $primaryDark;
+    font-size: medium;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+}
+.col {
+    display: flex;
+    flex-direction:column;
+}
+.hero {
+width: 100vw;
+justify-content: flex-end;
+margin-top: 10px;
+font-family: $hero;
+.hero__logo {
+    align-self: flex-start;
+    margin-right: 90px;
+    width: 100px;
+}
+.nav__menu {
+    margin: 1rem;
+    justify-content: end;
+    align-items: center;
+    gap: 10px;
+        ul li{
+            display: inline;
+        }
+        a {
+            color: $primaryDark;
+            font-size: 15px;
+        }
+        a:hover {
+            color: $accentLight;
+        }
+}
+}
+.hero__img {
+    width: 100%;
+    justify-content: center;
+        img {  
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+        }
+}
+.img2{
+    background-image: url(/images/bg-curve-movil1.png);
+    background-size: cover;
+    margin-bottom: 0;
+}
+.hero__parrafo {
+    width: 100vw;
+    
+    justify-content: center;
+    align-items: center;
+}
+#hero__parrafo2{
+    background-color: $NeutralBlue;
+}
+.hero__form {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+        input {
+            height: 25px;
+        }       
+        button {
+            cursor: pointer;
+            height: 30px;
+            width: 100px;
+            background-color: $accentDark;
+            color: white;
+            font-family: $body;
+            border-color: $accentDark;
+            border-radius: 3px;
+        }
+        button:hover {
+            background-color: $primaryLigth;
+        }
+}
+.card{
+    width: 100%;
+    background-color: $NeutralBlue;
+    justify-content: center;
+    align-items: center;
+}
+.body__card {
+    margin: 2rem;
+    text-align: center;
+    background-color: white;
+    width: 70%;
+    height: 300px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        
+        .avatar{
+            margin-left: 35px;
+            margin-bottom: 10px;
+            border-radius: 50%;
+            width: 80px;
+        }
+        h3, p {
+            margin: 5px;
+        }
+        .quotes{
+            border-radius: none;
+            margin-top: 20px;
+            margin-right: 80%;
+            width: 50px;
+        }
+}
+.parrafo-3 {
+    background-color: $primaryLigth;
+    h1, p {
+        
+        color: white;
+        margin: 10px;
+    }
+    h1{
+        margin-top: 100px;
+    }
+}
+.footer {
+    width: 100vw;
+    background-color: $primaryDark;
+    justify-content: center;
+      p, a{ color: white;
+        text-align: start;
+        font-family: $body;
+     }
+     a:hover{
+        color: $accentLight;
+     }
+     
+    .foot__contact {
+        width: 100vw;
+        img{
+            width: 20px;
+        }
+    }
+    
+    .foot__link__2{
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        
+        margin: 10px;
+        
+    }
+    .img__logo__2 {
+        align-items: center;
+        img {
+        width: 150px;
+    }
+        
+}
+}
+@media screen and (min-width: 768px) {
+    .hero{
+        
+    .hero__logo {
+        margin-right: 50%;
+        width: 20%;
+    }
+    .nav__menu {
+        justify-content: space-around;
+        a {
+        font-size: 25px;
+        margin: 0.5rem;
+    }
+    }
+}
+.hero__img {
+    
+    img{   
+    width: 60%;
+   
+}
+}
+
+.hero__parrafo {
+    margin: 0;
+        h3 {
+            width: 60%;
+            font-size: xx-large;
+        }
+        p {
+            margin-top: 5px;
+            width: 50%;
+            font-size: x-large;
+        }
+}
+
+.hero__form {
+    
+        input {
+            width: 300px;
+            margin-left: 20%;
+        }
+        button {
+            width: 200px;
+            margin-left: 30%;
+            margin-top: 15px;
+        }
+}
+.body__card {
+    background-color: white;
+    width: 400px;
+      
+}
+.footer {
+    
+    .img__logo__2{
+        justify-content: center;
+        align-items: center;
+        a{
+            margin-right: 40%;
+        }
+        img {
+            margin-right: 30%;
+        }
+   
+    }
+
+    
+}
+}

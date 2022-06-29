@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+p, h3, h1 {
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  color: #363062;
+  font-size: medium;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero {
+  width: 100vw;
+  justify-content: flex-end;
+  margin-top: 10px;
+  font-family: "Raleway", sans-serif;
+}
+.hero .hero__logo {
+  align-self: flex-start;
+  margin-right: 90px;
+  width: 100px;
+}
+.hero .nav__menu {
+  margin: 1rem;
+  justify-content: end;
+  align-items: center;
+  gap: 10px;
+}
+.hero .nav__menu ul li {
+  display: inline;
+}
+.hero .nav__menu a {
+  color: #363062;
+  font-size: 15px;
+}
+.hero .nav__menu a:hover {
+  color: #A91079;
+}
+
+.hero__img {
+  width: 100%;
+  justify-content: center;
+}
+.hero__img img {
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+}
+
+.img2 {
+  background-image: url(/images/bg-curve-movil1.png);
+  background-size: cover;
+  margin-bottom: 0;
+}
+
+.hero__parrafo {
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero__parrafo2 {
+  background-color: #E9D5CA;
+}
+
+.hero__form {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+.hero__form input {
+  height: 25px;
+}
+.hero__form button {
+  cursor: pointer;
+  height: 30px;
+  width: 100px;
+  background-color: #B1BCE6;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  border-color: #B1BCE6;
+  border-radius: 3px;
+}
+.hero__form button:hover {
+  background-color: #4C3575;
+}
+
+.card {
+  width: 100%;
+  background-color: #E9D5CA;
+  justify-content: center;
+  align-items: center;
+}
+
+.body__card {
+  margin: 2rem;
+  text-align: center;
+  background-color: white;
+  width: 70%;
+  height: 300px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.body__card .avatar {
+  margin-left: 35px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  width: 80px;
+}
+.body__card h3, .body__card p {
+  margin: 5px;
+}
+.body__card .quotes {
+  border-radius: none;
+  margin-top: 20px;
+  margin-right: 80%;
+  width: 50px;
+}
+
+.parrafo-3 {
+  background-color: #4C3575;
+}
+.parrafo-3 h1, .parrafo-3 p {
+  color: white;
+  margin: 10px;
+}
+.parrafo-3 h1 {
+  margin-top: 100px;
+}
+
+.footer {
+  width: 100vw;
+  background-color: #363062;
+  justify-content: center;
+}
+.footer p, .footer a {
+  color: white;
+  text-align: start;
+  font-family: "Open Sans", sans-serif;
+}
+.footer a:hover {
+  color: #A91079;
+}
+.footer .foot__contact {
+  width: 100vw;
+}
+.footer .foot__contact img {
+  width: 20px;
+}
+.footer .foot__link__2 {
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin: 10px;
+}
+.footer .img__logo__2 {
+  align-items: center;
+}
+.footer .img__logo__2 img {
+  width: 150px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero .hero__logo {
+    margin-right: 50%;
+    width: 20%;
+  }
+  .hero .nav__menu {
+    justify-content: space-around;
+  }
+  .hero .nav__menu a {
+    font-size: 25px;
+    margin: 0.5rem;
+  }
+
+  .hero__img img {
+    width: 60%;
+  }
+
+  .hero__parrafo {
+    margin: 0;
+  }
+  .hero__parrafo h3 {
+    width: 60%;
+    font-size: xx-large;
+  }
+  .hero__parrafo p {
+    margin-top: 5px;
+    width: 50%;
+    font-size: x-large;
+  }
+
+  .hero__form input {
+    width: 300px;
+    margin-left: 20%;
+  }
+  .hero__form button {
+    width: 200px;
+    margin-left: 30%;
+    margin-top: 15px;
+  }
+
+  .body__card {
+    background-color: white;
+    width: 400px;
+  }
+
+  .footer .img__logo__2 {
+    justify-content: center;
+    align-items: center;
+  }
+  .footer .img__logo__2 a {
+    margin-right: 40%;
+  }
+  .footer .img__logo__2 img {
+    margin-right: 30%;
+  }
+}/*# sourceMappingURL=style.css.map */
